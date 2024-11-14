@@ -74,11 +74,15 @@
     background: #ddd;
     clear: both; /* Ensures the footer stays below floated elements */
   }
-  
+
    /* Responsive layout for screens less than 700px wide */
   @media screen and (max-width: 700px) {
-    .side, .main, .navbar a {
+    .side, .main {
       float: none; /* Removes float for stacking */
       width: 100%; /* Full width on smaller screens */
+    }
+    .navbar a {
+        display: block;
+        width: 100%;
     }
   }
